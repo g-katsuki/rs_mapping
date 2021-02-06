@@ -12,7 +12,7 @@ else()
   set(CMAKE_CXX_FLAGS "-std=c++11 ${CMAKE_CXX_FLAGS}")
 endif()
 
-find_package(Boost 1.65.0 REQUIRED COMPONENTS timer)
+find_package(Boost 1.65.0 REQUIRED COMPONENTS timer filesystem system)
 
 # Set dependent libraries
 set(HEADER_DIR "" CACHE PATH "The path to dependent headers")
